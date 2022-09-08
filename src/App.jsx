@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Recommended from './components/Recommended'
 import Tickets from './components/Tickets'
 import Welcome from './components/Welcome'
+import Footer from './components/Footer'
 
 function App() {
 

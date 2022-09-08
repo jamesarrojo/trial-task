@@ -3,3 +3,25 @@
   padding: 0;
   margin: 0;
 }
+
+header {
+  display: flex;
+  padding: 20px 40px;
+}
+
+header > ul {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.btn--sign-in {
+  text-decoration: none;
+  display: block;
+  background: #4D14CD;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
