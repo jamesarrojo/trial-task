@@ -11,7 +11,7 @@ export default function Modal(props) {
                 <p>Select your method to sign in, you could add another way.</p>
                 <span>Connect Wallet</span>
                 <div className="modal--btn">
-                    <a href="#"><img src="https://fellaz.xyz/img/icon-sign-metamask.ecf6606d.svg" alt="" /> MetaMask</a>
+                    <a onClick={props.connectWalletHandler}><img src="https://fellaz.xyz/img/icon-sign-metamask.ecf6606d.svg" alt="" /> MetaMask</a>
                     <a href="#"><img src="https://fellaz.xyz/img/icon-sign-walletconnect.4458141a.svg" alt="" /> WalletConnect</a>
                 </div>
                 <span>Sign In with</span>

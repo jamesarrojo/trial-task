@@ -169,3 +169,7 @@ nav > ul {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
+
+.modal--btn > a:hover {
+  cursor: pointer;
+}
