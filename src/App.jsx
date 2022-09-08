@@ -8,20 +8,32 @@ import Recommended from './components/Recommended'
 import Tickets from './components/Tickets'
 import Welcome from './components/Welcome'
 import Footer from './components/Footer'
+import Modal from './components/Modal'
+import { useState } from 'react'
 
 function App() {
+  const [openModal, setOpenModal] = useState(false)
+
+  function onOpen() {
+    setOpenModal(true)
+  }
+
+  function onClose() {
+    setOpenModal(false)
+  }
 
   return (
     <>
-      <Navbar />
+      <Navbar onOpen={onOpen}/>
       <Welcome />
-      <Companies />
+      <Modal openModal={openModal} onClose={onClose} />
+      {/* <Companies />
       <Tickets />
       <Artists />
       <Recommended />
       <Building />
       <CallToAction />
-      <Footer />
+      <Footer /> */}
     </>
     
   )
